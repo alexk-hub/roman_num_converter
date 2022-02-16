@@ -1,0 +1,307 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #44adf1 0%, #00add8 100%);
+    margin: 0 5px;
+}
+
+/*--------------------Header--------------------*/
+
+header {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header-title {
+    margin: 20px 0 5px;
+    font-weight: 300;
+    font-size: 2.3em;
+    color: #e6f2ff;
+}
+
+.header-separator {
+    margin: 0 auto 1em;
+    max-width: 270px;
+    width: 70%;
+    height: 2px;
+    background-color: #ff9800;
+    border: none;
+}
+
+.header-description {
+    max-width: 420px;
+    margin: 1.5em auto 0;
+    font-weight: 400;
+    font-size: 1em;
+    color: #b9e0f2;
+}
+
+/*--------------------Main--------------------*/
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+span {
+    text-decoration: overline;
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrap {
+    background: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 630px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.form h2 {
+    background: #b79874;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 26px;
+    margin: 20px 0 5px;
+    text-align: center;
+}
+
+.form p {
+    font-style: italic;
+    color: grey;
+    font-size: 17px;
+}
+
+#input {
+    border: 1px solid #b79874;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 18px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    font-size: 17px;
+    padding: 5px 10px;
+    border: 1px solid #999;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+button:last-child {
+    margin-left: 70px;
+}
+
+button:hover {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+}
+
+button:active {
+    top: 1px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pre-answer {
+    margin: 14px 0 7px;
+}
+
+.answer {
+    font-size: 18px;
+    width: 323px;
+    text-align: center;
+}
+
+.note {
+    background: white;
+    border-left: 10px solid #b79874;
+    padding: 8px 5px 5px 10px;
+    border-radius: 5px;
+    max-width: 435px;
+    width: 90%;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.note p:first-child {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.note p:last-child {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.table-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+table {
+    text-align: center;
+    font-size: 17px;
+    border-collapse: collapse;
+    background: white;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 95px;
+}
+
+table th {
+    background-color: #b79874;
+    color: white;
+}
+
+table td {
+    color: #4e4b4b;
+}
+
+/*--------------------Footer--------------------*/
+
+footer {
+    margin: auto 0 1em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer-copyright {
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #e6f2ff;
+}
+
+.footer_social {
+    padding-top: 10px;
+}
+
+.fsi {
+    width: 25px;
+    margin: 0 10px;
+    color: #cfd2e2;
+    font-size: 1.5em;
+}
+
+.fsi:hover {
+    filter: brightness(150%);
+}
+
+.github,
+.linkedin {
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+
+.github:before {
+    content: url("icons/git.svg");
+}
+
+.linkedin:before {
+    content: url("icons/linkedin.svg");
+}
+
+/*--------------------@Media--------------------*/
+
+@media (max-width: 992px) {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-wrap {
+        margin: 30px 2px 0 2px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-wrap {
+        width: 520px;
+    }
+}
+
+@media (max-width: 568px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .form-wrap {
+        width: 340px;
+        height: 290px;
+    }
+
+    .form h2 {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .form p {
+        font-size: 14px;
+    }
+
+    #input {
+        width: 180px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    button:last-child {
+        margin-left: 50px;
+    }
+
+    .answer {
+        font-size: 16px;
+        width: 220px;
+    }
+
+    .note p:first-child {
+        font-size: 17px;
+    }
+
+    .note p:last-child {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Roman Numeral Converter</h1>
+        <hr class="header-separator">
+        <h3 class="header-description">Converter made with HTML, CSS and JavaScript.</h3>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="main-part">
+                <div class="form-wrap">
+                    <div class="form">
+                        <h2>Roman Numeral Converter</h2>
+                        <p>
+                            Convert numbers to Roman numerals or <br>
+                            Convert Roman numerals to numbers
+                        </p>
+                        <input type="text" id="input">
+                        <div class="buttons">
+                            <button id="clear">Clear</button>
+                            <button id="calc">Convert</button>
+                        </div>
+                        <p class="pre-answer">Answer:</p>
+                        <div class="answer"></div>
+                    </div>
+                </div>
+                <div class="note">
+                    <p>Note:</p>
+                    <p>
+                        A line over a Roman numeral means it is multiplied by 1,000.<br>
+                        For example,
+                        <br>
+                        <span>X</span> = 10,000. Enter <span>X</span> into the converter as _X.<br>
+                        <span>IX</span> = 9,000. Enter <span>IX</span> into the converter as _I_X.
+                    </p>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Roman Numeral</th>
+                            <th>Number Value</th>
+                            <th>Use As Inputs</th>
+                        </tr>
+                        <tr>
+                            <td>I</td>
+                            <td>1</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>5</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>10</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>50</td>
+                            <td>L</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>100</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>500</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>1,000</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td><span>IV</span></td>
+                            <td>4,000</td>
+                            <td>_I_V</td>
+                        </tr>
+                        <tr>
+                            <td><span>V</span></td>
+                            <td>5,000</td>
+                            <td>_V</td>
+                        </tr>
+                        <tr>
+                            <td><span>IX</span></td>
+                            <td>9,000</td>
+                            <td>_I_X</td>
+                        </tr>
+                        <tr>
+                            <td><span>X</span></td>
+                            <td>10,000</td>
+                            <td>_X</td>
+                        </tr>
+                        <tr>
+                            <td><span>L</span></td>
+                            <td>50,000</td>
+                            <td>_L</td>
+                        </tr>
+                        <tr>
+                            <td><span>C</span></td>
+                            <td>100,000</td>
+                            <td>_C</td>
+                        </tr>
+                        <tr>
+                            <td><span>D</span></td>
+                            <td>500,000</td>
+                            <td>_D</td>
+                        </tr>
+                        <tr>
+                            <td><span>M</span></td>
+                            <td>1,000,000</td>
+                            <td>_M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4 class="footer-copyright">© Alex Kovalenko 2021</h4>
+        <div class="footer_social">
+            <a href="https://github.com/alexk-hub/roman_num_converter" target="_blank"><span class="fsi github"></span></a>
+            <a href="https://www.linkedin.com/in/alex-kovalenko-b15a48231/" target="_blank"><span class="fsi linkedin"></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>
